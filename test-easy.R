@@ -45,3 +45,7 @@ ani_list <- list(timeLine = p_time,
 animint2dir(ani_list, out.dir = "ebola_viz", open.browser = FALSE)
 servr::httd("ebola_viz")
 
+# not working 
+animint2gist(ani_list, out.dir = "ebola_viz", 
+             description = "Spread of Ebola in Liberia in 2014")
+

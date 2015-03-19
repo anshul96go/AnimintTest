@@ -23,8 +23,18 @@ p <- ggplot() +
                 label = point), data = plot_dat) + 
   ggtitle("Brownian Motion in Two Dimensions")
 p
+
+# to animint --------------------------------------
+
 animint2dir(list(plot = p, 
                  time = list(variable = "iter", ms = 1000), 
                  duration = list(iter = 250)), 
             out.dir = "brownian_motion", open.browser = FALSE)
 servr::httd("brownian_motion")
+
+# not working
+animint2gist(list(plot = p, 
+                  time = list(variable = "iter", ms = 1000), 
+                  duration = list(iter = 250)), 
+             out.dir = "brownian_motion", 
+             description = "A Demonstration of Brownian Motion")
