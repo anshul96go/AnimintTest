@@ -1,0 +1,349 @@
+{
+ "geoms": {
+ "geom1_point_plot": {
+ "geom": "point",
+"classed": "geom1_point_plot",
+"aes": {
+ "x": "x",
+"y": "y",
+"colour": "point",
+"showSelected": "iter",
+"label": "point" 
+},
+"params": {
+ "na.rm": false 
+},
+"subset_order": [],
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected": "factor",
+"label": "factor",
+"PANEL": "integer",
+"fill": "rgb" 
+},
+"PANEL": 1,
+"chunks": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6,
+"7": 7,
+"8": 8,
+"9": 9,
+"10": 10 
+},
+"total": 10,
+"chunk_order": [
+ "iter" 
+],
+"nest_order": [],
+"timeValues": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"nextgeom": "geom2_text_plot" 
+},
+"geom2_text_plot": {
+ "geom": "text",
+"classed": "geom2_text_plot",
+"aes": {
+ "x": "x",
+"y": "y",
+"colour": "point",
+"showSelected": "iter",
+"label": "point" 
+},
+"params": {
+ "parse": false 
+},
+"subset_order": [],
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected": "factor",
+"label": "factor",
+"PANEL": "integer" 
+},
+"PANEL": 1,
+"chunks": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6,
+"7": 7,
+"8": 8,
+"9": 9,
+"10": 10 
+},
+"total": 10,
+"chunk_order": [
+ "iter" 
+],
+"nest_order": [],
+"timeValues": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
+} 
+},
+"time": {
+ "variable": "iter",
+"ms":   1000,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
+},
+"duration": {
+ "iter":    250 
+},
+"selectors": {
+ "iter": {
+ "selected": "1",
+"type": "single",
+"update": [
+ "geom1_point_plot",
+"geom2_text_plot" 
+],
+"chunks": "iter",
+"duration":    250 
+} 
+},
+"plots": {
+ "plot": {
+ "strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":      0,
+"right":      0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [      1 ],
+"height_proportion": [      1 ] 
+},
+"geoms": [
+ "geom1_point_plot",
+"geom2_text_plot" 
+],
+"axis1": {
+ "x": [
+ 0.013394,
+0.21079,
+0.40819,
+0.60558,
+0.80298 
+],
+"xlab": [
+ "-4",
+"-2",
+"0",
+"2",
+"4" 
+],
+"xrange": [ -4.1357, 5.9962 ],
+"xline": true,
+"xticks": true,
+"y": [
+ 0.21797,
+0.46104,
+0.7041,
+0.94717 
+],
+"ylab": [
+ "-6",
+"-3",
+"0",
+"3" 
+],
+"yrange": [ -8.6902,  3.652 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "x",
+"xanchor": "middle",
+"xangle":      0,
+"ytitle": "y",
+"yanchor": "end",
+"yangle":      0,
+"xlabs": [
+ "-4",
+"-2",
+"0",
+"2",
+"4" 
+],
+"ylabs": [
+ "-6",
+"-3",
+"0",
+"3" 
+],
+"legend": {
+ "point": {
+ "guide": "legend",
+"geoms": [ "point", "text" ],
+"title": "point",
+"entries": [
+ {
+ "label": [ "10" ],
+"pointcolour": "#FF62BC",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#FF62BC",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "9" ],
+"pointcolour": "#E76BF3",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#E76BF3",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "8" ],
+"pointcolour": "#9590FF",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#9590FF",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "7" ],
+"pointcolour": "#00B0F6",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#00B0F6",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "6" ],
+"pointcolour": "#00BFC4",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#00BFC4",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "5" ],
+"pointcolour": "#00BF7D",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#00BF7D",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "4" ],
+"pointcolour": "#39B600",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#39B600",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "3" ],
+"pointcolour": "#A3A500",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#A3A500",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "2" ],
+"pointcolour": "#D89000",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#D89000",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+},
+{
+ "label": [ "1" ],
+"pointcolour": "#F8766D",
+"pointshape":     16,
+"pointsize":      2,
+"textcolour": "#F8766D",
+"textsize":      5,
+"textangle":      0,
+"texthjust":    0.5,
+"textvjust":    0.5,
+"textfamily": "",
+"textfontface":      1,
+"textlineheight":    1.2 
+} 
+] 
+} 
+},
+"title": "Brownian Motion in Two Dimensions",
+"options": {
+ "width":    400,
+"height":    400 
+} 
+} 
+} 
+}
