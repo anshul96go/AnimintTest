@@ -1,0 +1,638 @@
+{
+ "geoms": {
+ "geom1_tallrect_timeLine": {
+ "geom": "tallrect",
+"classed": "geom1_tallrect_timeLine",
+"aes": {
+ "xmin": "xmin",
+"xmax": "xmax",
+"clickSelects": "Date" 
+},
+"params": {
+ "alpha":    0.5 
+},
+"subset_order": [],
+"types": {
+ "xmin": "numeric",
+"xmax": "numeric",
+"clickSelects": "numeric",
+"PANEL": "integer",
+"group": "integer" 
+},
+"PANEL": 1,
+"chunks": 1,
+"total": 1,
+"chunk_order": [],
+"nest_order": [],
+"timeValues": [ 1.4029e+09, 1.403e+09, 1.4034e+09, 1.4036e+09, 1.4037e+09, 1.4039e+09, 1.404e+09, 1.4042e+09, 1.4043e+09, 1.4043e+09, 1.4047e+09, 1.4048e+09, 1.405e+09, 1.4052e+09, 1.4056e+09, 1.4058e+09, 1.4062e+09, 1.4063e+09, 1.4069e+09, 1.4071e+09, 1.4078e+09, 1.4081e+09, 1.4082e+09, 1.4083e+09, 1.4085e+09, 1.4089e+09, 1.4092e+09, 1.4095e+09, 1.4096e+09, 1.4097e+09, 1.4098e+09, 1.4099e+09, 1.41e+09, 1.41e+09, 1.4101e+09, 1.4103e+09, 1.4104e+09, 1.4105e+09, 1.4106e+09, 1.4107e+09, 1.4107e+09, 1.4108e+09, 1.4109e+09, 1.4112e+09, 1.4113e+09, 1.4114e+09, 1.4116e+09, 1.4117e+09, 1.4118e+09, 1.4119e+09, 1.412e+09, 1.4121e+09, 1.4123e+09, 1.4125e+09, 1.4126e+09, 1.4139e+09, 1.414e+09, 1.4141e+09, 1.4142e+09, 1.4145e+09, 1.4145e+09, 1.4146e+09, 1.4147e+09, 1.4149e+09, 1.4151e+09, 1.4154e+09, 1.4159e+09, 1.416e+09, 1.4164e+09, 1.4164e+09, 1.4165e+09, 1.4167e+09, 1.4168e+09, 1.417e+09, 1.417e+09, 1.4171e+09, 1.4172e+09, 1.4173e+09, 1.4174e+09, 1.4175e+09, 1.4176e+09 ],
+"nextgeom": "geom2_line_timeLine" 
+},
+"geom2_line_timeLine": {
+ "geom": "line",
+"classed": "geom2_line_timeLine",
+"aes": {
+ "x": "Date",
+"y": "Total_suspected_cases",
+"group": "Location",
+"colour": "Location" 
+},
+"params": [],
+"subset_order": [],
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"group": "integer",
+"PANEL": "integer" 
+},
+"PANEL": 1,
+"chunks": 1,
+"total": 1,
+"chunk_order": [],
+"nest_order": [
+ "group" 
+] 
+},
+"geom3_path_ebolaMap": {
+ "geom": "path",
+"classed": "geom3_path_ebolaMap",
+"aes": {
+ "x": "long",
+"y": "lat",
+"group": "group" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":      1,
+"na.rm": false,
+"colour": "grey",
+"size": [    0.1 ],
+"alpha": [    0.5 ] 
+},
+"subset_order": [],
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "integer",
+"PANEL": "integer" 
+},
+"PANEL": 1,
+"chunks": 1,
+"total": 1,
+"chunk_order": [],
+"nest_order": [
+ "group" 
+],
+"nextgeom": "geom4_point_ebolaMap" 
+},
+"geom4_point_ebolaMap": {
+ "geom": "point",
+"classed": "geom4_point_ebolaMap",
+"aes": {
+ "x": "lon",
+"y": "lat",
+"size": "Total_suspected_cases",
+"colour": "Location",
+"showSelected": "Date" 
+},
+"params": {
+ "na.rm": false,
+"alpha": [    0.7 ] 
+},
+"subset_order": [],
+"types": {
+ "size": "numeric",
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected": "numeric",
+"PANEL": "integer",
+"fill": "rgb" 
+},
+"PANEL": 1,
+"chunks": {
+ "1402876800": 1,
+"1402963200": 2,
+"1403395200": 3,
+"1403568000": 4,
+"1403654400": 5,
+"1403913600": 6,
+"1.404e+09": 7,
+"1404172800": 8,
+"1404259200": 9,
+"1404345600": 10,
+"1404691200": 11,
+"1404777600": 12,
+"1404950400": 13,
+"1405209600": 14,
+"1405555200": 15,
+"1405814400": 16,
+"1406160000": 17,
+"1406332800": 18,
+"1406937600": 19,
+"1407110400": 20,
+"1407801600": 21,
+"1408060800": 22,
+"1408233600": 23,
+"1408320000": 24,
+"1408492800": 25,
+"1408924800": 26,
+"1409184000": 27,
+"1409529600": 28,
+"1409616000": 29,
+"1409702400": 30,
+"1409788800": 31,
+"1409875200": 32,
+"1409961600": 33,
+"1410048000": 34,
+"1410134400": 35,
+"1410307200": 36,
+"1410393600": 37,
+"1410480000": 38,
+"1410566400": 39,
+"1410652800": 40,
+"1410739200": 41,
+"1410825600": 42,
+"1410912000": 43,
+"1411171200": 44,
+"1411257600": 45,
+"1411430400": 46,
+"1411603200": 47,
+"1411689600": 48,
+"1411776000": 49,
+"1411862400": 50,
+"1412035200": 51,
+"1412121600": 52,
+"1412294400": 53,
+"1412467200": 54,
+"1412640000": 55,
+"1413936000": 56,
+"1414022400": 57,
+"1414108800": 58,
+"1414195200": 59,
+"1414454400": 60,
+"1414540800": 61,
+"1414627200": 62,
+"1414713600": 63,
+"1414886400": 64,
+"1415059200": 65,
+"1415404800": 66,
+"1415923200": 67,
+"1416009600": 68,
+"1416355200": 69,
+"1416441600": 70,
+"1416528000": 71,
+"1416700800": 72,
+"1416787200": 73,
+"1416960000": 74,
+"1417046400": 75,
+"1417132800": 76,
+"1417219200": 77,
+"1417305600": 78,
+"1417392000": 79,
+"1417478400": 80,
+"1417564800": 81 
+},
+"total": 81,
+"chunk_order": [
+ "Date" 
+],
+"nest_order": [],
+"timeValues": [ 1.4039e+09, 1.404e+09, 1.4042e+09, 1.4043e+09, 1.4043e+09, 1.4047e+09, 1.4048e+09, 1.405e+09, 1.4052e+09, 1.4056e+09, 1.4058e+09, 1.4062e+09, 1.4063e+09, 1.4071e+09, 1.4078e+09, 1.4081e+09, 1.4082e+09, 1.4083e+09, 1.4085e+09, 1.4089e+09, 1.4092e+09, 1.4095e+09, 1.4096e+09, 1.4097e+09, 1.4098e+09, 1.4099e+09, 1.41e+09, 1.41e+09, 1.4101e+09, 1.4103e+09, 1.4104e+09, 1.4105e+09, 1.4106e+09, 1.4107e+09, 1.4107e+09, 1.4108e+09, 1.4109e+09, 1.4112e+09, 1.4113e+09, 1.4114e+09, 1.4116e+09, 1.4117e+09, 1.4118e+09, 1.4119e+09, 1.412e+09, 1.4121e+09, 1.4123e+09, 1.4125e+09, 1.4126e+09, 1.4139e+09, 1.414e+09, 1.4141e+09, 1.4142e+09, 1.4145e+09, 1.4145e+09, 1.4146e+09, 1.4147e+09, 1.4149e+09, 1.4151e+09, 1.4154e+09, 1.4159e+09, 1.416e+09, 1.4164e+09, 1.4164e+09, 1.4165e+09, 1.4167e+09, 1.4168e+09, 1.417e+09, 1.417e+09, 1.4171e+09, 1.4172e+09, 1.4173e+09, 1.4174e+09, 1.4175e+09, 1.4176e+09, 1.4069e+09, 1.4029e+09, 1.403e+09, 1.4034e+09, 1.4036e+09, 1.4037e+09 ] 
+} 
+},
+"time": {
+ "variable": "Date",
+"ms":   1000,
+"sequence": [ "1402876800", "1402963200", "1403395200", "1403568000", "1403654400", "1403913600", "1.404e+09", "1404172800", "1404259200", "1404345600", "1404691200", "1404777600", "1404950400", "1405209600", "1405555200", "1405814400", "1406160000", "1406332800", "1406937600", "1407110400", "1407801600", "1408060800", "1408233600", "1408320000", "1408492800", "1408924800", "1409184000", "1409529600", "1409616000", "1409702400", "1409788800", "1409875200", "1409961600", "1410048000", "1410134400", "1410307200", "1410393600", "1410480000", "1410566400", "1410652800", "1410739200", "1410825600", "1410912000", "1411171200", "1411257600", "1411430400", "1411603200", "1411689600", "1411776000", "1411862400", "1412035200", "1412121600", "1412294400", "1412467200", "1412640000", "1413936000", "1414022400", "1414108800", "1414195200", "1414454400", "1414540800", "1414627200", "1414713600", "1414886400", "1415059200", "1415404800", "1415923200", "1416009600", "1416355200", "1416441600", "1416528000", "1416700800", "1416787200", "1416960000", "1417046400", "1417132800", "1417219200", "1417305600", "1417392000", "1417478400", "1417564800" ] 
+},
+"selectors": {
+ "Date": {
+ "selected": "1402876800",
+"type": "single",
+"update": [
+ "geom1_tallrect_timeLine",
+"geom4_point_ebolaMap" 
+],
+"chunks": "Date" 
+} 
+},
+"plots": {
+ "timeLine": {
+ "strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":      0,
+"right":      0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [      1 ],
+"height_proportion": [      1 ] 
+},
+"geoms": [
+ "geom1_tallrect_timeLine",
+"geom2_line_timeLine" 
+],
+"axis1": {
+ "x": [
+ 0.17876,
+0.48641,
+0.79407 
+],
+"xlab": [
+ "July",
+"September",
+"November" 
+],
+"xrange": [ 1.4021e+09, 1.4183e+09 ],
+"xline": true,
+"xticks": true,
+"y": [
+ 0.045455,
+0.30475,
+0.56405,
+0.82334 
+],
+"ylab": [
+ "0",
+"500",
+"1000",
+"1500" 
+],
+"yrange": [ -87.65, 1840.7 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Date",
+"xanchor": "middle",
+"xangle":      0,
+"ytitle": "Cumulative Suspected Cases",
+"yanchor": "end",
+"yangle":      0,
+"xlabs": [
+ "July",
+"September",
+"November" 
+],
+"ylabs": [
+ "0",
+"500",
+"1000",
+"1500" 
+],
+"legend": {
+ "Location": {
+ "guide": "legend",
+"geoms": "path",
+"title": "Location",
+"entries": [
+ {
+ "pathcolour": "#FF67A4",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Sinoe.County" ] 
+},
+{
+ "pathcolour": "#FD61D1",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "RiverCess.County" ] 
+},
+{
+ "pathcolour": "#E76BF3",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "River.Gee.County" ] 
+},
+{
+ "pathcolour": "#B983FF",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Nimba.County" ] 
+},
+{
+ "pathcolour": "#619CFF",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Montserrado.County" ] 
+},
+{
+ "pathcolour": "#00B0F6",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Maryland.County" ] 
+},
+{
+ "pathcolour": "#00BCD8",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Margibi.County" ] 
+},
+{
+ "pathcolour": "#00C0AF",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Lofa.County" ] 
+},
+{
+ "pathcolour": "#00BF7D",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Grand.Kru" ] 
+},
+{
+ "pathcolour": "#00BA38",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Grand.Gedeh" ] 
+},
+{
+ "pathcolour": "#6BB100",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Grand.Cape.Mount" ] 
+},
+{
+ "pathcolour": "#A3A500",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Grand.Bassa" ] 
+},
+{
+ "pathcolour": "#C99800",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Gbarpolu.County" ] 
+},
+{
+ "pathcolour": "#E58700",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Bong.County" ] 
+},
+{
+ "pathcolour": "#F8766D",
+"pathsize":    0.5,
+"pathlinetype":      1,
+"label": [ "Bomi.County" ] 
+} 
+] 
+} 
+},
+"title": "Ebola Cases in Liberia in 2014",
+"options": {
+ "width":    350,
+"height":    400 
+} 
+},
+"ebolaMap": {
+ "strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":      0,
+"right":      0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [      1 ],
+"height_proportion": [      1 ] 
+},
+"geoms": [
+ "geom3_path_ebolaMap",
+"geom4_point_ebolaMap" 
+],
+"axis1": {
+ "x": [
+ 0.15385,
+0.37413,
+0.59441,
+0.81469 
+],
+"xlab": [
+ "-11",
+"-10",
+"-9",
+"-8" 
+],
+"xrange": [ -11.698, -7.1588 ],
+"xline": true,
+"xticks": true,
+"y": [
+ 0.18553,
+0.40204,
+0.61856,
+0.83507 
+],
+"ylab": [
+ "5",
+"6",
+"7",
+"8" 
+],
+"yrange": [ 4.1431, 8.7617 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Longitude",
+"xanchor": "middle",
+"xangle":      0,
+"ytitle": "Latitude",
+"yanchor": "end",
+"yangle":      0,
+"xlabs": [
+ "-11",
+"-10",
+"-9",
+"-8" 
+],
+"ylabs": [
+ "5",
+"6",
+"7",
+"8" 
+],
+"legend": {
+ "Total_suspected_cases": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Total_suspected_cases",
+"entries": [
+ {
+ "pointsize":  8.704,
+"pointshape":     16,
+"pointcolour": "#000000",
+"pointalpha":    0.7,
+"label": [ "1500" ] 
+},
+{
+ "pointsize":   6.13,
+"pointshape":     16,
+"pointcolour": "#000000",
+"pointalpha":    0.7,
+"label": [ "1000" ] 
+},
+{
+ "pointsize":  3.574,
+"pointshape":     16,
+"pointcolour": "#000000",
+"pointalpha":    0.7,
+"label": [ "500" ] 
+},
+{
+ "pointsize":      1,
+"pointshape":     16,
+"pointcolour": "#000000",
+"pointalpha":    0.7,
+"label": [ "0" ] 
+} 
+] 
+},
+"Location": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Location",
+"entries": [
+ {
+ "pointcolour": "#FF67A4",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Sinoe.County" ] 
+},
+{
+ "pointcolour": "#FD61D1",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "RiverCess.County" ] 
+},
+{
+ "pointcolour": "#E76BF3",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "River.Gee.County" ] 
+},
+{
+ "pointcolour": "#B983FF",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Nimba.County" ] 
+},
+{
+ "pointcolour": "#619CFF",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Montserrado.County" ] 
+},
+{
+ "pointcolour": "#00B0F6",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Maryland.County" ] 
+},
+{
+ "pointcolour": "#00BCD8",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Margibi.County" ] 
+},
+{
+ "pointcolour": "#00C0AF",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Lofa.County" ] 
+},
+{
+ "pointcolour": "#00BF7D",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Grand.Kru" ] 
+},
+{
+ "pointcolour": "#00BA38",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Grand.Gedeh" ] 
+},
+{
+ "pointcolour": "#6BB100",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Grand.Cape.Mount" ] 
+},
+{
+ "pointcolour": "#A3A500",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Grand.Bassa" ] 
+},
+{
+ "pointcolour": "#C99800",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Gbarpolu.County" ] 
+},
+{
+ "pointcolour": "#E58700",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Bong.County" ] 
+},
+{
+ "pointcolour": "#F8766D",
+"pointshape":     16,
+"pointsize":      2,
+"pointalpha":    0.7,
+"label": [ "Bomi.County" ] 
+} 
+] 
+} 
+},
+"title": "Ebola Cases in Liberia",
+"options": {
+ "width":    400,
+"height":    400 
+} 
+} 
+} 
+}
