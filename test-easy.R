@@ -42,6 +42,7 @@ p_map <- ggplot() +
 ani_list <- list(timeLine = p_time, 
                  ebolaMap = p_map, 
                  time = list(variable = "Date", ms = 1000))
+# works
 animint2dir(ani_list, out.dir = "ebola_viz", open.browser = FALSE)
 servr::httd("ebola_viz")
 
