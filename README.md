@@ -1,5 +1,5 @@
 # AnimintTest
-Testing the Animint package for Google Summer of Code.  Unfortunately, using `animint2gist` is not working properly on my computer so I made webpages to view the easy and medium examples.
+Testing the [Animint package](https://github.com/tdhock/animint) for Google Summer of Code.  Unfortunately, using `animint2gist` is not working properly on my computer so I made webpages to view the easy and medium examples.
 
 ## Easy Test
 A visualization of the spread of ebola in Liberia in 2014.  [Result](http://kferris10.github.io/AnimintTest-easy/)
