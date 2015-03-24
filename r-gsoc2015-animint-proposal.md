@@ -65,7 +65,7 @@ Once the visualization has been generated, the user should be able to resize the
 
 ## Implementation
 
-* Rescaling Plots: Start by adding buttons for height and width of plot.  If these are successful, then work on 
+* Rescaling Plots: Start by adding buttons for height and width of plot.  If these are successful, then work on allowing user to click and drag to change plot size.
 * Updating Documentation: Documentation can be added directly to the files in the `R/` directory.  Vignettes can be made with gifs embedded to allow for demonstration of Animint's animations and interactivity.  Alternatively, they could be made like the [ggvis](https://github.com/rstudio/ggvis) vignettes which note that the R code needs to be run to see the interactivity.
 
 ## Timeline
