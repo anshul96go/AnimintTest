@@ -42,14 +42,14 @@ For even more related work see the [Graphics](http://cran.r-project.org/web/view
 
 ## Project Goals
 
-This project aims to implement several new ways for the user to interact the plot, adding fragment identifies to the visualization, allow the user to dynamically rescale plots, and provide some minor updates to the documentation.
+This project aims to implement several new ways for the user to interact the plot, adding fragment identifiers to the visualization, allow the user to dynamically rescale plots, and provide some minor updates to the documentation.
 
 ### Interactivity with Legends
 
 * Currently in Animint, legends are static.  This project will attempt to allow the user to use legends to subset the data that is being plotted.
 * Legends could also be extended by reacting to the user's actions.  For example, in [this Highcharts visualization](http://www.highcharts.com/maps/demo/map-drilldown/dark-unica) the legend reacts to wherever the user's mouse is loated.
 
-### Fragment Identifies
+### Fragment Identifiers
 
 Animations in Animint allow visualizations to be displayed across time.  Adding fragment identifiers allows the user to go directly to a specific point in time.
 
