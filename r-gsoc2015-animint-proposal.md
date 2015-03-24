@@ -1,95 +1,90 @@
-===== R GSoC Student Application Template =====
+# Interactivity with Legends and other new Features for Animint
 
-Project title: Animint
+Kevin Ferris
 
-Project short title (30 characters): Interactive animations in R
+## Background
 
-URL of project idea page: https://github.com/rstats-gsoc/gsoc2015/wiki/Animint
+[Animint]([https://github.com/tdhock/animint]) is an R package for making interactive animated data
+visualizations on the web, using ggplot syntax and 2 new aesthetics:
 
+- **showSelected=variable** means that only the subset of the data that
+  corresponds to the selected value of **variable** will be shown.
+- **clickSelects=variable** means that clicking a plot element will
+  change the currently selected value of **variable**.
 
-==== Bio of Student ====
+Toby Dylan Hocking initiated the project in 2013, and Susan VanderPlas
+(2013) and Carson Sievert (2014) have provided important contributions
+during previous GSOC projects.
 
-I am currently a grad student in Statistics at Montana State University so I have worked with R and ggplot2 for several years.  I developed an R package for the Philadelphia Phillies last year which utilized the ggplot2 package to visualize results.
+## Related work
 
+Standard R graphics are based on the pen and paper model, which makes
+animations and interactivity difficult to accomplish. Some existing
+packages that provide interactivity and/or animation are
 
-=== CONTACT INFORMATION ===
+- Non-interactive animations can be accomplished with the [animation](http://yihui.name/animation/)
+  package (animint provides interactions other than moving
+  forward/back in time).
+- Some interactions with non-animated linked plots can be done with
+  the [qtbase, qtpaint, and cranvas packages](https://github.com/ggobi/cranvas/wiki) (animint provides
+  animation and showSelected).
+- Linked plots in the web are possible using [SVGAnnotation](http://www.omegahat.org/SVGAnnotation/SVGAnnotationPaper/SVGAnnotationPaper.html) or [gridSVG](http://sjp.co.nz/projects/gridsvg/), but using these to create such a visualization requires knowledge of Javascript (animint designers write only R/ggplot2 code). 
+- The [svgmaps](https://r-forge.r-project.org/scm/viewvc.php/pkg/?root=svgmaps) package defines interactivity (hrefs, tooltips) in R code using igeoms, and exports SVG plots using gridSVG, but does not
+  support showing/hiding data subsets (animint does). 
+- The [ggvis](https://github.com/rstudio/ggvis) package defines a grammar of interactive graphics that is
+  limited to a single plot (animint does several linked plots).
+- [Vega](https://github.com/trifacta/vega) can be used for describing plots in Javascript, but does not
+  implement clickSelects/showSelected (animint does).
+- [RIGHT](http://cran.r-project.org/web/packages/RIGHT/) and [DC](http://dc-js.github.io/dc.js/) implement interactive plots for some specific plot types (animint uses the multi-layered grammar of graphics so is not
+  limited to pre-defined plot types).
 
-Student name: Kevin Ferris
+For even more related work see the [Graphics](http://cran.r-project.org/web/views/Graphics.html) and [Web technologies](http://cran.r-project.org/web/views/WebTechnologies.html) task views on CRAN, and [Visualization design resources from the UBC InfoVis Group](http://www.cs.ubc.ca/group/infovis/resources.shtml).
 
-Melange Link_id:  kferris10
+## Project Goals
 
-Student postal address: 106 Grant Chamberlain Dr, Apt 3E, Bozeman, MT, 59718
+This project aims to implement several new ways for the user to interact the plot, adding fragment identifies to the visualization, allow the user to dynamically rescale plots, and provide some minor updates to the documentation.
 
-Telephone(s): 4064101722
+### Interactivity with Legends
 
-Email(s): kevin.ferris10@gmail.com
+* Currently in Animint, legends are static.  This project will attempt to allow the user to use legends to subset the data that is being plotted.
+* Legends could also be extended by reacting to the user's actions.  For example, in [this Highcharts visualization](http://www.highcharts.com/maps/demo/map-drilldown/dark-unica) the legend reacts to wherever the user's mouse is loated.
 
-Other communications channels: Skype/Google+, etc. : 
+### Fragment Identifies
 
-Skype: k.ferris1
+Animations in Animint allow visualizations to be displayed across time.  Adding fragment identifiers allows the user to go directly to a specific point in time.
 
+### Rescaling Plots
 
-=== Student affiliation ===
+Once the visualization has been generated, the user should be able to resize the plots in the web browser.
 
-Institution: Montana State University
+### Updating Documentation
 
-Program: Statistics
+* Right now, `animint2gist` has an argument called `plot.list`.  The help file says "plot.list	a named list of ggplots and option lists."  The possible options could be specified.
+* The Details section in each help file could provide additional explanation of the underlying process implemented by each function.
+* Incorporate existing examples into vignettes in package.
 
-Stage of completion: Master's Program
+## Implementation
 
-Contact to verify: Jim Robison-Cox, jimrc@math.montana.edu
+* Rescaling Plots: Start by adding buttons for height and width of plot.  If these are successful, then work on 
+* Updating Documentation: Documentation can be added directly to the files in the `R/` directory.  Vignettes can be made with gifs embedded to allow for demonstration of Animint's animations and interactivity.  Alternatively, they could be made like the [ggvis](https://github.com/rstudio/ggvis) vignettes which note that the R code needs to be run to see the interactivity.
 
+## Timeline
 
-==== Schedule Conflicts: ====
+* Familiarize myself with the Animint package.  Specifically, this project will provide improvements to the [renderer](https://github.com/tdhock/animint/wiki/Renderer-details) so I will work on this in detail.  Begin to implement methods to rescale plots (End of April)
+* Add new method to subset data through the legend (Middle of May)
+* Documentation and testing of new method (Memorial Day)
+* Add to Documentation of current functions and familiarize myself with fragment identifiers for Animint (Beginning of June)
+* Add fragment identifies to Animint plots (Middle of June)
+* Documentation and testing of fragment identifiers (Late June)
+* Add methods to link user's hovering to legend (Mid-Late July)
+* Documentation and testing of legend hovering (Beginning of August)
+* Additional documentation and final touch-ups as needed (End of August)
 
-On August 3, I will be beginning an internship with a Major League Baseball team.  As a result, I will have less time to work on this project in the month of August.  I plan to have my project mostly completed by August.  Then I will spend that month on final touch-ups (if needed).
+## About Me
 
+I am currently a grad student in Statistics at Montana State University.  I started working with R and ggplot2 as an undergraduate at Montana State in 2010.  I am developing an [R package](https://github.com/greenwood-stat/catstats) for the intermediate statistics class at Montana State.  Last year I built an R package for the Philadelphia Phillies while working as an intern.
 
-==== MENTORS ====
+Email: <kevin.ferris10@gmail.com>
 
-Mentor names: Toby Dylan Hocking, Carson Siever, and Susan VanderPlas
+GitHub: <https://github.com/kferris10>
 
-Mentor emails: tdhock5@gmail.com, cpsievert1@gmail.com, srvanderplas@gmail.com
-
-Mentor link_ids: 
-
-Have you been in touch with the mentors? When and how?: Yes, I have communicated with them frequently about the project through email over this last week.
-
-
-==== CODING PLAN & METHODS ====
-
-Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  The sub-section headings below are examples only.  Each project is different, please make your application appropriate to the work you propose.  
-
-Describe perceived obstacles and challenges, and how you plan to overcome them.
-
-
-
-==== TIMELINE ====
-
-(consult GSOC schedule)
-
-Provide a detailed timeline of how you plan to spend your summer.  Don't leave testing and documentation for last, as that's almost a guarantee of a failed project. 
-
-What is your contingency plan for things not going to schedule? 
-
-
-==== MANAGEMENT OF CODING PROJECT ====
-
-How do you propose to ensure code is submitted / tested?
-
-The animint project is located on GitHub.  I will fork the repository and submit changes as pull requests on GitHub.  R provides the testthat package to implement unit testing.  This package allows me to write tests to ensure that my code is doing exactly what I intend and to ensure that it doesn't interfere with any of the existing Animint code.
-
-How often do you plan to commit?  What changes in commit behavior would indicate a problem?
-
-Through the end of April, I will be familiarizing myself with Animint so I don't plan to commit very often.  Once April ends, I plan to commit at least a couple times a week through August.  In August, I intend to be mostly finished with the project so I will hopefully be making minor changes once a week or so.  
-
-If I start committing less than once a week, that will be a problem.
-
-
-==== TEST ====
-
-Describe the qualification test that you have submitted to you project mentors.  If feasible, include code, details, output, and example of similar coding problems that you have solved.
-
-
-
-==== Anything Else ====
