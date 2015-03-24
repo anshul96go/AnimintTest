@@ -5,7 +5,7 @@ Kevin Ferris
 ## Background
 
 [Animint]([https://github.com/tdhock/animint]) is an R package for making interactive animated data
-visualizations on the web, using ggplot syntax and 2 new aesthetics:
+visualizations on the web, using ggplot syntax and two new aesthetics:
 
 - **showSelected=variable** means that only the subset of the data that
   corresponds to the selected value of **variable** will be shown.
@@ -47,7 +47,7 @@ This project aims to implement several new ways for the user to interact the plo
 ### Interactivity with Legends
 
 * Currently in Animint, legends are static.  This project will attempt to allow the user to use legends to subset the data that is being plotted.
-* Legends could also be extended by reacting to the user's actions.  For example, in [this Highcharts visualization](http://www.highcharts.com/maps/demo/map-drilldown/dark-unica) the legend reacts to wherever the user's mouse is loated.
+* Legends could also be extended by reacting to the user's actions.  For example, in [this Highcharts visualization](http://www.highcharts.com/maps/demo/map-drilldown/dark-unica) the legend reacts to the location of the user's mouse.
 
 ### Fragment Identifiers
 
