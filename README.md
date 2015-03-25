@@ -10,4 +10,5 @@ An implementation of Brownian motion using animint.  [Result](http://kferris10.g
 ## Medium-Hard Test
 Used [testthat](https://github.com/hadley/testthat) to test that point and text geoms are present, that the legend displays properly, and that the plot has the proper title.
 
-
+## Project Propoal
+[Interactivity with Legends and other new featuers for Animint](https://github.com/kferris10/AnimintTest/blob/master/r-gsoc2015-animint-proposal.md)
